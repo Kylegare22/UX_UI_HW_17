@@ -1,79 +1,81 @@
-header{
-    background-color: teal;
-    height: auto;
-}
-
-.main{
-    background-color: lightblue;
+header {
+    font-family: Arial, Helvetica, sans-serif;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+}
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 40px
+
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
 }
 
-footer{
-    background-color: pink;
-    height: 300px;
+p {
+    padding-left: 230px;
+    padding-right: 230px;
+  
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    text-align: center;
 }
-
-.topNavBar{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.topNavBar {
     overflow: hidden;
     color: whitesmoke;
-    font-size: 30px;
+    padding-top: 20px;
+    padding-right: 100px;
+    font-size: 17px;
+    float: right;
 }
-
 .topNavBarLi {
     display: inline-block;
     padding: 14px 16px;
+    
 }
-
-.topNavBarLi a{
+.topNavBarLi a {
     text-decoration: none;
-    color: peachpuff;
+    color: black;
 }
-
-.topNavBarLi a:hover {
-    background-color: white;
-    color: teal;
+.topNavBar Li a:hover{
+    color: grey
 }
-
-.mainbio{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 3% 5%;
-    background-color: lightgrey;
+.hiking {
+    padding: 35px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
-
-.boxRed{
-    background-color: red;
-    height: 100px;
-    width: 100%;
+.logo {
+    float: left;
+    padding: 35px 0px;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+    width: 5%;
 }
-
-.boxGreen{
-    background-color: green;
-    height: 100px;
-    width: 100%;
+.bottomNavBar {
+    overflow: hidden;
+    color: whitesmoke;
+    padding-top: 20px;
+    font-size: 14px;
 }
+.bottomNavBarLi {
+    padding: 14px 16px;
 
-.boxBlue{
-    background-color: blue;
-    height: 100px;
-    width: 100%;
+    
 }
-
-.boxYellow{
-    background-color: yellow;
-    height: 100px;
-    width: 100%;
+.bottomNavBarLi a {
+    text-decoration: none;
+    color: black;
 }
-
-.threeGrids {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+.bottomNavBar Li a:hover{
+    color: grey
 }
