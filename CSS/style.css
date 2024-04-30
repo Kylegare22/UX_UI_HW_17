@@ -7,9 +7,10 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     height: auto;
     padding-top: 60px;
-    padding-bottom: 40px
+    padding-bottom: 60px;
 
 }
+
 h1 {
     text-align: center;
     font-size: 24px;
@@ -22,10 +23,14 @@ p {
 }
 
 footer {
+    position: static;
     font-family: Arial, Helvetica, sans-serif;
     height: auto;
     text-align: center;
+    bottom: 0;
+    width: 100%
 }
+
 .topNavBar {
     overflow: hidden;
     color: whitesmoke;
@@ -47,11 +52,14 @@ footer {
     color: grey
 }
 .Headshot {
-    padding: 35px 0px;
+    border: 6px black solid;
+    border-radius: 10px;
+    box-shadow: 0.4rem 0.4rem 0.45rem rgba(0, 0, 0, 0.1);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    max-width: 40%;
+    max-height: 700px;
 }
 .logo {
     float: left;
@@ -79,4 +87,30 @@ footer {
 }
 .bottomNavBar Li a:hover{
     color: grey
+}
+
+.h2{ 
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+
+.skillsBox {
+    border: black 5px solid;
+    padding: 20px;
+    box-shadow: 0.4rem 0.4rem 0.45rem rgba(50, 158, 190, 0.3);
+}
+.skillsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+    margin: 0 20px 50px;
+}
+@media screen and (max-width: 600px) {
+    .skillsGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
 }
