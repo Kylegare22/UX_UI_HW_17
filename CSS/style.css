@@ -23,7 +23,7 @@ p {
 }
 
 footer {
-    position: static;
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     height: auto;
     text-align: center;
@@ -60,6 +60,7 @@ footer {
     margin-right: auto;
     max-width: 40%;
     max-height: 700px;
+    margin-top: 50px;
 }
 .logo {
     float: left;
@@ -99,6 +100,9 @@ footer {
     border: black 5px solid;
     padding: 20px;
     box-shadow: 0.4rem 0.4rem 0.45rem rgba(50, 158, 190, 0.3);
+    display: grid;
+    align-items: center;
+    margin: 10px;
 }
 .skillsGrid {
     display: grid;
@@ -115,6 +119,9 @@ footer {
     
 }
 
+
+/* mywork page CSS  */
+
 .myWork{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -123,21 +130,32 @@ footer {
     margin: 0px 5%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 120px 120px 120px;
+    grid-auto-rows: minmax(120px, auto);
     grid-template-areas: 
     "workImg workSummary"
     "workImg workSummary"
     "workImg workSummary";
     align-items: center;
-    padding-left: 10rem;
-    padding-right: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 }
 
 .workSummary{
-    border: 6px solid black;   
+    border: 6px solid black; 
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
+.workSummary button{
+    width: 80px;
+    justify-self: center;
+    height: auto;
+    margin: 5px;
+
+}
 
 
 .workSummary h4{
@@ -145,6 +163,7 @@ footer {
     padding-top: 2px;
     padding-bottom: 4px;
     font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 .workSummary p{
@@ -152,13 +171,19 @@ footer {
 }
 
 .uxImg{
-    border: 2px solid black;
+    border: 6px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    margin: 50px;
+   
 }
 
 h1{
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h3{
@@ -173,6 +198,6 @@ button{
     color: #f2ebdf;
     height: 30px;
     border-radius: 5px;
-    background-color: #FF6C4A;
-
+    background-color: #D2EA73;
+    color: black;
 }
