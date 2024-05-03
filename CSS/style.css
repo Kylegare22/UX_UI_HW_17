@@ -103,13 +103,14 @@ footer {
     display: grid;
     align-items: center;
     margin: 10px;
+    border-radius: 6px;
 }
 .skillsGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     grid-gap: 10px;
-    margin: 0 20px 50px;
+    margin: 0 50px 50px;
 }
 @media screen and (max-width: 600px) {
     .skillsGrid {
@@ -173,7 +174,7 @@ footer {
 .uxImg{
     border: 6px solid black;
     border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
     display: grid;
     margin: 50px;
    
