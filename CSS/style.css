@@ -202,3 +202,37 @@ button{
     background-color: #D2EA73;
     color: black;
 }
+
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* High z-index to ensure it appears on top */
+}
+
+.spinner {
+    border: 16px solid #f3f3f3; /* Light gray border */
+    border-top: 16px solid #3498db; /* Blue border for the spinner */
+    border-radius: 50%; /* Circular shape */
+    width: 60px;
+    height: 60px;
+    animation: spin 3s linear infinite; /* Continuous spinning animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#resumebutton{
+    display: grid;
+    margin: 10px auto;
+}

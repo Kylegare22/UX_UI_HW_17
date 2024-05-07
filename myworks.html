@@ -6,8 +6,15 @@
     <title>Kyle's UX Portfolio</title>
     <link ref="style.css">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"> </script>
 </head>
 <body>
+
+    <div id="loading-overlay" class="loading">
+        <div class="spinner"></div> 
+    </div>
+
     <header>
         <div>
             <img src="./Assets/kg-high-resolution-logo-black-transparent.png" alt="my logo" class="logo">
@@ -16,7 +23,7 @@
             <li class = "topNavBarLi"><a href="index.html">Home</a></li>
             <li class = "topNavBarLi"><a href="myworks.html">My Works</a></li>
             <li class = "topNavBarLi"><a href="index.html">About Me</a></li>
-            <li class = "topNavBarLi"><a href="#">Resume</a></li>
+            <li class = "topNavBarLi"><a href="resume.html">Resume</a></li>
         </ul>
        </nav>
        </div>
@@ -80,9 +87,21 @@
             <li class = "bottomNavBarLi"><a href="index.html">Home</a></li>
             <li class = "bottomNavBarLi"><a href="myworks.html">My Works</a></li>
             <li class = "bottomNavBarLi"><a href="index.html">About Me</a></li>
-            <li class = "bottomNavBarLi"><a href="#">Resume</a></li>
+            <li class = "bottomNavBarLi"><a href="resume.html">Resume</a></li>
         </ul>
        </nav>
 </footer>
 </body>
+    <script>
+        $( document ).ready(function() {
+            $("button").hover(function() {
+                console.log("hello")
+                $(this).css("color", "red")
+            })
+            $("button").on("blur", function() {
+                console.log("bye")
+                $(this).css("color", "black")
+            })
+        })
+    </script>
 </html>

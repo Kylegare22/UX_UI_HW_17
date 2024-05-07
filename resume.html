@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle's UX Portfolio</title>
+    <link ref="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"> </script>
+</head>
+<body>
+
+    <div id="loading-overlay" class="loading">
+        <div class="spinner"></div> 
+    </div>
+
+    <header>
+        <div>
+            <img src="./Assets/kg-high-resolution-logo-black-transparent.png" alt="my logo" class="logo">
+       <nav class = "topNavBar">
+        <ul class = "topNavBarUl">
+            <li class = "topNavBarLi"><a href="index.html">Home</a></li>
+            <li class = "topNavBarLi"><a href="myworks.html">My Works</a></li>
+            <li class = "topNavBarLi"><a href="index.html">About Me</a></li>
+            <li class = "topNavBarLi"><a href="resume.html">Resume</a></li>
+        </ul>
+       </nav>
+       </div>
+
+    </header>
+
+
+    <button id="resumebutton">
+        Resume
+    </button>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <nav class = "bottomNavBar">
+            <ul class = "bottomNavBarUl">
+                <li class = "bottomNavBarLi"><a href="index.html">Home</a></li>
+                <li class = "bottomNavBarLi"><a href="myworks.html">My Works</a></li>
+                <li class = "bottomNavBarLi"><a href="index.html">About Me</a></li>
+                <li class = "bottomNavBarLi"><a href="resume.html">Resume</a></li>
+            </ul>
+           </nav>
+    </footer>
+    <script>
+        $("#resumebutton").click(function() {
+            window.location.href = "https://drive.google.com/file/d/1EppJxVZWcUmTPDa5aYjZgKUD_mhVyxZS/view?usp=sharing";
+        })
+    </script>
+    </body>
+    </html>
