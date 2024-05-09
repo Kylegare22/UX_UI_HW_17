@@ -1,3 +1,5 @@
+
+
 // Get the loading overlay element
 let loadingOverlay = document.getElementById('loading-overlay');
 
@@ -30,6 +32,5 @@ navLinks.forEach(link => {
 
 // Hide the loading screen when the page has fully loaded
 window.addEventListener('load', hideLoadingScreen);
-
 
 

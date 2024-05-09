@@ -235,4 +235,20 @@ button{
 #resumebutton{
     display: grid;
     margin: 10px auto;
+    box-shadow: 0px 3px 2px 1px #18512b;
+    align-content: center;
 }
+
+#resumebutton:hover{ 
+    background-color: #18512b;
+    color: white;
+    box-shadow: 0px 3px 2px 1px #D2EA73;
+}
+
+.activeButton{
+    font-family:  Arial;
+    background-color: whitesmoke;
+    color:#ff6c4a;
+    border:1px solid #FF6C4A;
+    box-shadow: 0px 3px 2px 1px #FF6C4A;
+} 
